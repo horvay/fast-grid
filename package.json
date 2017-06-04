@@ -1,0 +1,56 @@
+{
+  "name": "fast-grid",
+  "version": "0.0.0",
+  "description": "Simple version of a basic flux type library written in Typescript",
+  "main": "lib/fast-grid.min.js",
+  "types": "lib/fast-grid.d.ts",
+  "scripts": {
+    "build": "webpack --env build",
+    "dev": "webpack --progress --colors --watch --env dev",
+    "test": "jest",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  },
+  "dependencies": {
+      "react": "^15.5.4",
+      "react-dom": "^15.5.4"
+  },
+  "devDependencies": {
+    "@types/jest": "*",
+    "jest": "*",
+    "jest-cli": "^20.0.4",
+    "ts-jest": "^20.0.5",
+    "ts-loader": "^2.1.0",
+    "tslint": "*",
+    "typescript": "^2.3.4",
+    "webpack": "^2.6.1",
+    "@storybook/react": "^3.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/horvay/fast-grid"
+  },
+  "keywords": [
+    "grid",
+    "data",
+    "excel",
+    "library"
+  ],
+  "author": "Horvay, Greg",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/horvay/fast-grid"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ],
+    "transform": {
+      ".(ts|tsx)": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+    },
+    "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx|js)$",
+    "testResultsProcessor": "<rootDir>/node_modules/ts-jest/coverageprocessor.js"
+  }
+}
